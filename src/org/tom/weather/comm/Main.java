@@ -76,9 +76,6 @@ public class Main {
       } catch (Exception e) {
         LOGGER.error("exception - waiting 5s", e);
         try {
-          if (errorCount++ > MAX_ERRORS) {
-            System.exit(1);
-          }
           Thread.sleep(5000);
           boolean ok = getStation().test();
           // show results of station test after the wait
