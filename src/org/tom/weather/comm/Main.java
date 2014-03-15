@@ -35,9 +35,6 @@ public class Main {
       } catch (Exception e) {
         LOGGER.error(e);
           try {
-            if (errorCount++ > MAX_ERRORS) {
-              System.exit(1);
-            }
             Thread.sleep(5000);
           } catch (InterruptedException ex) {
             LOGGER.error(ex);
